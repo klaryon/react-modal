@@ -70,6 +70,12 @@ export const Modal = ({showModal, setShowModal}) => {
                 <Background>
                     <ModalWrapper showModal>
                         <ModalImg src={require('./modal.jpg').default} alt='camera' />
+                        <ModalContent>
+                            <h1>Are you ready?</h1>
+                            <p>Get exclusive access to our next launch</p>
+                            <button>Join now</button>
+                        </ModalContent>
+                        <CloseModalButton aria-label='Close modal' onClick={() => setShowModal(prev => !prev)} />
                     </ModalWrapper>
                 </Background>
             ) : null}
